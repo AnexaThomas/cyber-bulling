@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyberbullying</title>
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+
+
+  <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about'%}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'fb'%}">Feedback</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'register'%}">Register</a>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'login'%}">Login</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+  <section class="bg-cyber">
+    
+    <img src="/media/pix/cybimg1.jpg" height="600" width="1300">
+  </section>
+  <section class="container">
+    <div class="row align-items-center my-5">
+      <div class="col-md-8">
+        <h2>What is Cyberbullying?</h2>
+        <p>Cyberbullying is bullying that takes place over digital devices like cell phones, computers, and tablets.
+          Cyberbullying can occur through SMS, Text, and apps, or online in social media, forums, or gaming where people
+          can view, participate in, or share content. Cyberbullying includes sending, posting, or sharing negative,
+          harmful, false, or mean content about someone else. It can include sharing personal or private information
+          about someone else causing embarrassment or humiliation. Some cyberbullying crosses the line into unlawful or
+          criminal behavior.</p>
+      </div>
+      <div class="col-md-4">
+        <img class="img-fluid w-100" src="/static/data-bully.png">
+      </div>
+    </div>
+    <h2>Places where cyberbullying occurs: </h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card mb-3">
+          <div class="card-body">
+            <i class="bi bi-facebook display-3"></i>
+            <h5 class="card-title mt-3">Facebook</h5>
+            <p class="card-text">Facebook has tips and tools for individuals being bullied, harassed or attacked online.
+              teenagers are also the main group who suffers from cyberbullying
+            </p>
+            <a href="https://www.facebook.com/" class="btn btn-primary">Click for more details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card mb-3">
+          <div class="card-body">
+            <i class="bi bi-instagram display-3"></i>
+            <h5 class="card-title mt-3">Instagram</h5>
+            <p class="card-text">Instagram is the most popular social media site for young people. Unfortunately,preteens
+              and teenagers are also the main group who suffers from cyberbullying.</p>
+            <a href="https://www.instagram.com/" class="btn btn-primary">Click for more details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card mb-3">
+          <div class="card-body">
+            <i class="bi bi-twitter display-3"></i>
+            <h5 class="card-title mt-3">Twitter</h5>
+            <p class="card-text">Twitter rules specifically prohibit the kind of abuse like threats, hate speech,
+              impersonation, and harassment on the basis of users’ race, ethnicity, gender, religion, sexual
+
+            </p>
+            <a href="https://twitter.com/" class="btn btn-primary">Click for more details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card mb-3">
+          <div class="card-body">
+            <i class="bi bi-snapchat display-3"></i>
+            <h5 class="card-title mt-3">Snapchat</h5>
+            <p class="card-text">For chatting with friends and sharing funny pictures in the moment, teens turn to
+              Snapchat. Snapchat doesn't send a notification if you've blocked them.
+            </p>
+            <a href="https://www.snapchat.com" class="btn btn-primary">Click for more details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script>
+   var button = document.querySelector('.ham-button')
+ var slide = document.querySelector('.nav-items')
+
+  button.addEventListener('click', () =>{
+    slide.classList.toggle('display');
+    button.children[0].classList.toggle('toggle1')
+    button.children[1].classList.toggle('toggle2')
+    button.children[2].classList.toggle('toggle3')
+  })
+</script>
+
+</body>
+
+</html>
